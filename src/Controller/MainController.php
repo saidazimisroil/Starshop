@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class MainController extends AbstractController
 {
     // homepage controller
-    #[Route('/', methods:['GET'])]
+    #[Route('/', methods:['GET'], name:'app_main_homepage')]
     public function index(StarshipRepository $starshipRepository): Response
     {
         $ships = $starshipRepository->findAll();

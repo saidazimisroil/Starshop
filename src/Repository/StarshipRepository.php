@@ -34,7 +34,7 @@ class StarshipRepository
                 'USS Wanderlust (NCC-2024-W)',
                 'Delta Tourist',
                 'Kathryn Journeyway',
-                StarshipStatusEnum::IN_PROGRESS
+                StarshipStatusEnum::COMPLETED
             ),
         ];
     }
