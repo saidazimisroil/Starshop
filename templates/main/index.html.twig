@@ -7,10 +7,10 @@
 {% block body %}
   <h1>Starshop - is RUNNING! </h1>
   <h2>
-      Browse here {{numOfStarships * 10}} starships
+      Browse here {{ ships|length }} starships
   </h2>
-  {% if numOfStarships > 456 %}
-      <h3>numOfStarships are greater than 456</h3>
+  {% if ships|length > 2 %}
+      <h3>numOfStarships are greater than 2</h3>
   {% endif %}
   <h2>My Ship</h2>
   <div>
